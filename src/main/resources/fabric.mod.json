@@ -3,13 +3,13 @@
   "id": "sodium",
   "version": "${version}",
   "name": "Sodium",
-  "description": "Sodium is a free and open-source optimization mod for Minecraft which improves frame rates and reduces lag spikes.",
+  "description": "Sodium is an free and open-source optimization mod for Minecraft which improves frame rates and reduces lag spikes.",
   "authors": [
     "JellySquid"
   ],
   "contact": {
-    "sources": "https://github.com/CaffeineMC/sodium-fabric",
-    "issues": "https://github.com/CaffeineMC/sodium-fabric/issues"
+    "homepage": "https://jellysquid.me",
+    "sources": "https://github.com/jellysquid3/sodium"
   },
   "license": "LGPL-3.0-only",
   "icon": "assets/sodium/icon.png",
@@ -30,7 +30,6 @@
     "fabricloader": ">=0.8.0"
   },
   "breaks": {
-    "optifabric": "*",
-    "canvas": "*"
+    "optifabric": "*"
   }
 }
