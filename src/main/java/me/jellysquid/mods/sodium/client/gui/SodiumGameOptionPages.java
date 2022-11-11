@@ -122,7 +122,7 @@ public class SodiumGameOptionPages {
                 .add(OptionImpl.createBuilder(AttackIndicator.class, vanillaOpts)
                         .setName(new TranslatableText("options.attackIndicator"))
                         .setTooltip(new TranslatableText("sodium.options.attack_indicator.tooltip"))
-                        .setControl(opts -> new CyclingControl<>(opts, AttackIndicator.class, new String[] { "Off", "Crosshair", "Hotbar" }))
+                        .setControl(opts -> new CyclingControl<>(opts, AttackIndicator.class, new Text[] { new TranslatableText("options.off"), new TranslatableText("options.attack.crosshair"), new TranslatableText("options.attack.hotbar") }))
                         .setBinding((opts, value) -> opts.attackIndicator = value, (opts) -> opts.attackIndicator)
                         .build())
                 .build());
@@ -137,7 +137,7 @@ public class SodiumGameOptionPages {
                 .add(OptionImpl.createBuilder(GraphicsMode.class, vanillaOpts)
                         .setName(new TranslatableText("options.graphics"))
                         .setTooltip(new TranslatableText("sodium.options.graphics_quality.tooltip"))
-                        .setControl(option -> new CyclingControl<>(option, GraphicsMode.class, new String[] { "Fast", "Fancy", "Fabulous" }))
+                        .setControl(option -> new CyclingControl<>(option, GraphicsMode.class, new Text[] { new TranslatableText("options.graphics.fast"), new TranslatableText("options.graphics.fancy"), new TranslatableText("options.graphics.fabulous") }))
                         .setBinding(
                                 (opts, value) -> opts.graphicsMode = value,
                                 opts -> opts.graphicsMode)
